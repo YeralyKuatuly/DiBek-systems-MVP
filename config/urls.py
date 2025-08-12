@@ -43,6 +43,19 @@ router.register('items', views.ItemViewSet)
 router.register('cart', views.CartViewSet, basename='cart')
 router.register('orders', views.OrderRequestViewSet)
 router.register('payments', views.PaymentViewSet, basename='payment')
+router.register(
+    'documents', views.BusinessDocumentViewSet, basename='document'
+)
+router.register(
+    'onec-integrations', views.OneCIntegrationViewSet,
+    basename='onec-integration'
+)
+router.register(
+    'document-sync', views.DocumentSyncViewSet, basename='document-sync'
+)
+router.register(
+    'sync-logs', views.DocumentSyncLogViewSet, basename='sync-log'
+)
 
 urlpatterns = [
     path('admin/', admin.site.urls),

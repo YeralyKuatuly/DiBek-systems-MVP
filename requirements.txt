@@ -12,3 +12,6 @@ typing_extensions==4.14.1
 tzdata==2025.2
 urllib3==2.5.0
 drf-yasg==1.21.7
+python-dotenv==1.0.0
+zeep==4.2.1
+lxml==4.9.3
